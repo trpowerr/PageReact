@@ -1,0 +1,43 @@
+.menu {
+  overflow-y: visible;
+  position: fixed;
+  right: -20%;top: 0;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  transition: 0.5s;
+  transform: translateX(0%);
+}
+.menu_active {
+  transform: translateX(-100%);
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  flex-direction: column;
+  margin-top: 50%;
+}
+.menu-list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+.menu-list a:hover {
+  color: #65a8e0;
+}
+#menu-btn {
+  position: absolute;
+  left: -50px;
+  top: 10px;
+  height: 15px;
+  width: 15px;
+  background-color: #000;
+}
